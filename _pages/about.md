@@ -8,4 +8,4 @@ permalink: /about/
 Nick name: AnXiao <br/>
 Gender: Male
 
-## Do things I like do. :）
+## Do things I like to do. :）

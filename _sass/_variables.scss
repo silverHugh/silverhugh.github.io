@@ -5,6 +5,13 @@
 /*
    Typography
    ========================================================================== */
+@font-face {
+    font-family: 'Levibrush';
+    src: url('/assets/fonts/levibrush-webfont.woff2') format('woff2'),
+         url('/assets/fonts/levibrush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 $doc-font-size              : 16 !default;
 
@@ -27,6 +34,7 @@ $times                      : Times, serif !default;
 $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
+$ink                        : Levibrush;
 
 $global-font-family         : $sans-serif !default;
 $header-font-family         : $sans-serif !default;

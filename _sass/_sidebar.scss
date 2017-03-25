@@ -77,12 +77,14 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 120px;
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 20px;
+      background-image: url(/assets/images/ink-circle.png);
+      background-size: cover;
+      background-position: 0px -10px;
     }
   }
 }
@@ -104,6 +106,7 @@
 
 .author__name {
   margin: 0;
+  padding-left: 27px;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -111,7 +114,7 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $ink, $sans-serif;
   font-size: $type-size-5;
 }
 
