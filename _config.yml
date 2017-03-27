@@ -137,6 +137,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - "*.gemspec"
 keep_files:
   - .git
   - .svn
@@ -244,3 +245,4 @@ defaults:
       comments: true
       share: true
       related: true
+      excerpt_separator: <!--shoreline-->
