@@ -13,6 +13,8 @@ Although Japanese is similar to Chinese, it's hard to learn for me. Remebering [
 <!--shoreline-->
 ---
 
+{% include toc %}
+
 Below are some materials for myself and anyone else who needs them.
 
 ### Websites
