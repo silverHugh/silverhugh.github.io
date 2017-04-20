@@ -78,3 +78,6 @@
     font-weight: bold;
   }
 }
+:-webkit-full-screen-ancestor .page__footer {
+  position: static;
+}
