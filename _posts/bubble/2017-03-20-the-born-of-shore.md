@@ -1,6 +1,6 @@
 ---
 title:  "The Born of Shore"
-modified:   2017-03-27 11:30:04 +0800
+date:   2017-03-27 11:30:04 +0800
 categories: bubble
 ---
 

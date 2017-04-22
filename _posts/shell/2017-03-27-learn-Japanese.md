@@ -3,7 +3,7 @@ title: Learn Japanese - 日本語を勉強する
 categories: shell
 tags: Japanese
 permalink: /shell/japanese/
-modified: 2017-03-27 13:49:22 +0800
+date: 2017-03-27 13:49:22 +0800
 ---
 
 Start to learn [Japanese language](https://en.wikipedia.org/wiki/Japanese_language) this term (2016~2017 Spring). Japanese is sweet-sounding and we Chinese of my generation watch Japanese and read manga since childhood. So Japanese language is very dear to us.

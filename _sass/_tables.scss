@@ -8,7 +8,7 @@ table {
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
-  border: 1px solid $light-gray;
+  text-align: center;
 
   & + table {
     margin-top: 1em;
@@ -16,23 +16,35 @@ table {
 }
 
 thead {
-  background-color: $lighter-gray;
-  border-bottom: 1px solid $light-gray;
+  border: 1px solid $lighter-gray;
+  border-radius: 5px;
+  border-bottom: 2px solid $light-gray;
+  box-shadow: 0px -1px 1px $light-gray;
+}
+
+thead tr{
+  background: none !important;
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left;
-  border-right: 1px solid $light-gray;
+  border-bottom: 2px solid $light-gray;
 }
 
 td {
   padding: 0.5em;
   border-bottom: 1px solid $light-gray;
-  border-right: 1px solid $light-gray;
 }
 
 tr, td, th {
   vertical-align: middle;
+}
+
+tr:nth-child(odd) {
+  background-color: $lightest-gray;
+}
+
+tr:nth-child(even) {
+  box-shadow: 0px 1px 1px $light-gray;
 }

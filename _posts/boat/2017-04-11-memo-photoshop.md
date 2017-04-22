@@ -1,8 +1,9 @@
 ---
 title: Memo - Photoshop
 categories: boat
-modified: 2017年04月11日18:50:40 +0800
+date: 2017-04-11 18:50:40 +0800
 tags: Photoshop
+redirect_from: /memo/ps/
 ---
 
 This is one of my memos about using Photoshop.
