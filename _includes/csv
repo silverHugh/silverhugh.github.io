@@ -1,0 +1,26 @@
+{% if d3 %}	
+{% assign d3 = d3 | plus: 1 %}
+{% else %}
+<script src="http://d3js.org/d3.v3.min.js"></script>	
+{% assign d3 = 0 %}
+{% endif %}
+
+<div class="d3">
+</div>
+<script type="text/javascript">
+	d3.text("{{include.csv}}", function(data) {
+	var parsedCSV = d3.csv.parseRows(data);
+	var container = d3.selectAll(".d3")
+		.filter(function(d, i) {return i == {{ d3 }} })
+	    .append("table")
+
+	    .selectAll("tr")
+	        .data(parsedCSV).enter()
+	        .append("tr")
+
+	    .selectAll("td")
+	        .data(function(d) { return d; }).enter()
+	        .append("td")
+	        .text(function(d) { return d; });
+	});
+</script>
