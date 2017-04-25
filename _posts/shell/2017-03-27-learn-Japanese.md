@@ -17,12 +17,20 @@ Although Japanese is similar to Chinese, it's hard to learn for me. Remebering [
 
 Below are some materials for myself and anyone else who needs them.
 
-### Websites
+## Websites
 
 - 知乎 - [如何快速有效地学习日语五十音？](https://www.zhihu.com/question/20318161)
 - 沪江日语 - [五十音发音表](http://jp.hjenglish.com/subject/pronounce/)
 - 学堂在线 - [日语与日本文化](http://www.xuetangx.com/courses/course-v1:TsinghuaX+20220332X+2016_T1/about)
 
-### Notes
+## Notes
 
 - Words - [語彙](/shell/japanese/words)
+
+## Hiragana - 平仮名
+
+{% include csv csv="/assets/csv/hiragana.csv" %}
+
+## Katakana - 片仮名
+
+{% include csv csv="/assets/csv/katakana.csv" %}

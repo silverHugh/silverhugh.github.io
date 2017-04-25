@@ -12,10 +12,12 @@ Japanese Words.
 <!--shoreline-->
 ---
 
-{% include toc%}
+{% include toc %}
 
 ## 课后单词
 
-|日本語|かな|中文||日本語|かな|中文|
-|---|---|---|---|---|---|---|
-|仮名|かな|假名||日本語|にほん|日语|
+{% include csv csv='/assets/csv/text-word.csv' %}
+
+## 练习
+
+{% include csv csv='/assets/csv/practice-word.csv' %}
