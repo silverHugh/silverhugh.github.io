@@ -1,7 +1,7 @@
 {% if d3 %}	
 {% assign d3 = d3 | plus: 1 %}
 {% else %}
-<script src="http://d3js.org/d3.v3.min.js"></script>	
+<script src="https://d3js.org/d3.v3.min.js"></script>	
 {% assign d3 = 0 %}
 {% endif %}
 
