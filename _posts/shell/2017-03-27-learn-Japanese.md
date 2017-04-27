@@ -29,8 +29,8 @@ Below are some materials for myself and anyone else who needs them.
 
 ## Hiragana - 平仮名
 
-{% include csv csv="/assets/csv/hiragana.csv" %}
+{% include csv csv="/assets/csv/jp/hiragana.csv" %}
 
 ## Katakana - 片仮名
 
-{% include csv csv="/assets/csv/katakana.csv" %}
+{% include csv csv="/assets/csv/jp/katakana.csv" %}

@@ -16,8 +16,10 @@ Japanese Words.
 
 ## 课后单词
 
-{% include csv csv='/assets/csv/text-word.csv' %}
+调整了部分词序，将相关性强的词放到了一起。
+
+{% include csv csv='/assets/csv/jp/text-word.csv' %}
 
 ## 练习
 
-{% include csv csv='/assets/csv/practice-word.csv' %}
+{% include csv csv='/assets/csv/jp/practice-word.csv' %}
