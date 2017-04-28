@@ -36,6 +36,25 @@
   }
 }
 
+/* Self-defined: pure */
+.pure {
+  @include breakpoint($large) {
+    @include span(12 of 12 last);
+    @include prefix(1 of 12);
+    @include suffix(1 of 12);
+  }
+
+  .page__inner-wrap {
+    @include full();
+
+    .page__content,
+    .page__meta,
+    .page__share {
+      @include full();
+    }
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;

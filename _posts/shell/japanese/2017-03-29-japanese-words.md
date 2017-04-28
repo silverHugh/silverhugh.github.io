@@ -1,5 +1,6 @@
 ---
 title: Words - 語彙
+categories: [memo, shell]
 tags: Japanese
 permalink: /shell/japanese/words
 hidden: true

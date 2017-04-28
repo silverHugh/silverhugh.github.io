@@ -1,6 +1,6 @@
 ---
 title: Terms of Badminton
-categories: shell
+categories: [term, shell]
 tags: Sports
 date: 2017-04-27 11:30:44 +0800
 hidden: true

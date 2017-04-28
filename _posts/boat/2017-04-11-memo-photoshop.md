@@ -1,6 +1,6 @@
 ---
 title: Memo - Photoshop
-categories: boat
+categories: [memo, boat]
 date: 2017-04-11 18:50:40 +0800
 tags: Photoshop
 redirect_from: /memo/ps/

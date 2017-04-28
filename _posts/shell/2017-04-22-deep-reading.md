@@ -1,6 +1,6 @@
 ---
 title: 用强力研读书
-categories: shell
+categories: [collect, shell]
 tags: Reading
 hidden: true
 date: 2017-04-22 23:44:01 +0800

@@ -233,6 +233,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  project:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -247,4 +253,12 @@ defaults:
       comments: true
       share: true
       related: true
+      excerpt_separator: <!--shoreline-->
+  - scope:
+      path: ""
+      type: project
+    values:
+      layout: pure
+      share: true
+      comments: true
       excerpt_separator: <!--shoreline-->
