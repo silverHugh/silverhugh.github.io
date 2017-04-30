@@ -1,6 +1,7 @@
 /* ==========================================================================
    TABLES
    ========================================================================== */
+$cell_padding: 0.5em 0em 0.5em 2em;
 
 table {
   margin-bottom: 1em;
@@ -8,7 +9,7 @@ table {
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
-  text-align: center;
+  text-align: left;
 
   & + table {
     margin-top: 1em;
@@ -27,13 +28,13 @@ thead tr{
 }
 
 th {
-  padding: 0.5em;
+  padding: $cell_padding;
   font-weight: bold;
   border-bottom: 2px solid $light-gray;
 }
 
 td {
-  padding: 0.5em;
+  padding: $cell_padding;
   border-bottom: 1px solid $light-gray;
 }
 
