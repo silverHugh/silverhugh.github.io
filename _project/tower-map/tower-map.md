@@ -41,15 +41,17 @@ TEDx
 ## 中国古塔地图
 
 根据杨老师的古塔数据，我将这些被老师摄影记录下来的古塔，标记在了地图上，一方面，对这些古塔有更加直观的认识，另一方面也方便人们去找寻、修复它们。
-</div>
 
-<div id="map" 
+
+<div id="map"
 	style="width: 100%; height: 800px; padding: 0.5em; 
 	margin:0.5em; border: 1px solid #ccc; border-radius: 0.25em;
 	box-shadow: 0 0 0.5em #ccc;">		
+</div> 
 </div>
 
 <script src="echarts.min.js"></script>
 <script src="bmap.min.js"></script>
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=bCUjR9ByWgH0yXSOUcNHISbP2a9KcGKm"></script>
+<script src="geolib.min.js"></script>
 <script src="tower_map.js"></script>

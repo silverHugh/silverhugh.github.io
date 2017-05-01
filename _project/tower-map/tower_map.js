@@ -19,6 +19,15 @@ window.onload = function(){
         return res;
     };
 
+    var decimal2string = function (lat, lng){
+        var res = '';
+        res += geolib.decimal2sexagesimal(lat);
+        res += lat > 0 ? ' E, ' : ' W, ';
+        res += geolib.decimal2sexagesimal(lng);
+        res += lng > 0 ? ' N' : ' S';
+        return res;
+    }
+
     option = {
         title : {
             text: '杨晓利老师拍摄的中国古塔',
@@ -29,8 +38,21 @@ window.onload = function(){
         },
         tooltip: {
             trigger: 'item',
-            formatter: function (params) {
-                return params.name + ' : ' + params.value[3];
+            formatter: function (tower) {
+                var res = '';
+                res += tower.name + '<br />';
+                if (tower.value[4])
+                    res += '年代：' + tower.value[4] + '<br />';
+                else
+                    res += '年代：不详' + '<br />';
+                res += '经纬度：' + decimal2string(tower.value[0], tower.value[1]) + '<br />';
+                if (tower.value[2])
+                    res += '海拔：' + tower.value[2] + '米<br />';
+                if (tower.value[3])
+                    res += '地址：' + tower.value[3] + '<br />';
+                if (tower.value[5])
+                    res += '拍摄日期：' + tower.value[5];
+                return res;
             }
         },
         bmap: {
@@ -177,11 +199,11 @@ window.onload = function(){
 
         e_map.resize();
     };
-    resize_map();
+    // resize_map();
 
-    window.onresize = function(){
-        resize_map();
-    };
+    // window.onresize = function(){
+    //     resize_map();
+    // };
 
     /* Load options */
     e_map.showLoading();
