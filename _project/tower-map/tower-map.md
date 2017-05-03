@@ -53,6 +53,7 @@ TEDx
 
 <script src="echarts.min.js"></script>
 <script src="bmap.min.js"></script>
+<script src="china.js"></script>
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=bCUjR9ByWgH0yXSOUcNHISbP2a9KcGKm"></script>
 <script src="geolib.min.js"></script>
 <script src="tower_map.js"></script>

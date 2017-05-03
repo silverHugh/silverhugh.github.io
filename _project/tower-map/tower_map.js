@@ -256,4 +256,21 @@ window.onload = function(){
 
     /* Bmap */
     var bmap = t_map.getModel().getComponent('bmap').getBMap();
+    /* 添加城市控件 */
+    var size = new BMap.Size(10, 20);
+    bmap.addControl(new BMap.CityListControl({
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        offset: size
+    }));
+    /* 添加平移缩放控件 */
+    var top_right_navigation = new BMap.NavigationControl({
+        anchor: BMAP_ANCHOR_TOP_RIGHT,
+        type: BMAP_NAVIGATION_CONTROL_LARGE
+    });
+    bmap.addControl(top_right_navigation);
+    /* 添加比例尺 */
+    var top_left_control = new BMap.ScaleControl({
+        anchor: BMAP_ANCHOR_TOP_RIGHT
+    });
+    bmap.addControl(top_left_control);
 };
