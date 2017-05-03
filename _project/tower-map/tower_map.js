@@ -28,6 +28,15 @@ window.onload = function(){
         return res;
     }
 
+    /* Used in tooltip position */
+    var t_pos = {
+        left: 0,
+        top: 0
+    }
+
+    var last_point = [0, 0];
+    var counter = 0;
+
     option = {
         title : {
             text: '杨晓利老师拍摄的中国古塔',
@@ -55,11 +64,35 @@ window.onload = function(){
                 if (tower.value[5])
                     res += '拍摄日期：' + tower.value[5];
                 return res;
-            },  
+            },
+            transitionDuration: 0,
             position: function (point, params, dom, rect, size) {
-                var x = point[0] + 30;
-                var y = point[1] + 30;
-                return [x, y];
+                var least_area = 20;
+                var offset_x = 30;
+                var offset_y = 30;
+                if (Math.abs(point[0] - last_point[0]) < least_area 
+                    && Math.abs(point[1] - last_point[1]) < least_area
+                    && counter >= 2){
+                    return t_pos;
+                }
+                if (Math.abs(point[0] - last_point[0]) >= least_area 
+                    || Math.abs(point[1] - last_point[1]) >= least_area){
+                    counter = 0;
+                }
+                counter += 1;
+                if (counter == 1) {
+                    t_pos.left = point[0] + offset_x;
+                    t_pos.top = point[1] + offset_y;
+                    last_point = [point[0], point[1]];
+                }
+                if (counter == 2){
+                    var real_x = $(dom).position().left;
+                    var real_y = $(dom).position().top;
+                    t_pos.left += point[0] - real_x + offset_x;
+                    t_pos.top += point[1] - real_y + offset_y;
+                }
+                console.log(counter, t_pos, point, real_x, real_y);
+                return t_pos;
             }
         },
         visualMap: [
@@ -273,4 +306,11 @@ window.onload = function(){
         anchor: BMAP_ANCHOR_TOP_RIGHT
     });
     bmap.addControl(top_left_control);
+    /* 拖拽事件 */
+    // bmap.addEventListener('dragstart', function(obj){
+    //     console.log(obj.pixel, obj.point);
+    // });
+    // bmap.addEventListener('dragend', function(obj){
+    //     console.log(obj.pixel, obj.point);
+    // });
 };
