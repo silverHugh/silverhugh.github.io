@@ -91,7 +91,6 @@ window.onload = function(){
                     t_pos.left += point[0] - real_x + offset_x;
                     t_pos.top += point[1] - real_y + offset_y;
                 }
-                console.log(counter, t_pos, point, real_x, real_y);
                 return t_pos;
             }
         },
