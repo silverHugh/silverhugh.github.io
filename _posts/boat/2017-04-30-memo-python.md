@@ -19,10 +19,8 @@ This is one of my memos about Python language.
 ```python
 # Get all attributes of a object
 dir(object_name)
-
 # Show the type of a object
 type(object_name)
-
 # Check the type
 isinstance(class_name, object_name)
 ```
@@ -31,7 +29,7 @@ isinstance(class_name, object_name)
 ```python
 # Loop with index
 for index, itme in enumerate(itmes):
-	print(index, item)
+    print(index, item)
 ```
 
 ### Object， Array
@@ -81,12 +79,12 @@ def dms2dd(degrees, minutes, seconds, direction):
     return dd;
 
 def parse_dms(dms):
-	try:
-		return float(dms)
-	except:
-	    parts = re.split('[^\d\w]+', dms)
-	    lat_or_lng = dms2dd(parts[0], parts[1], parts[2], parts[3])
-	    return lat_or_lng
+    try:
+        return float(dms)
+    except:
+        parts = re.split('[^\d\w]+', dms)
+        lat_or_lng = dms2dd(parts[0], parts[1], parts[2], parts[3])
+        return lat_or_lng
 
 lag = '116°23\'56.97"E'
 extract_height(lag)
