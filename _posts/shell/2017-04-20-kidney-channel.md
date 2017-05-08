@@ -11,7 +11,7 @@ Just for fun, I select some paragraphs from Jin Yong's wuxia novels which have s
 <!--shoreline-->
 ---
 
-Download [Shaoyin Kidney Channel of Foot.pdf](/assets/pdf/kidney-channel/kidney-channel.pdf)
+Download [Shaoyin Kidney Channel of Foot.pdf](/assets/pdf/kidney-channel/kidney-channel.pdf).
 
 <ul>
 	{% for i in (1..57) %}
@@ -21,7 +21,7 @@ Download [Shaoyin Kidney Channel of Foot.pdf](/assets/pdf/kidney-channel/kidney-
 			{% assign pic_name = '幻灯片' | append: i | append: '.jpg' %}
 		{% endif %}
 		<figure style="width: 540px; border: 1px solid #ccc;" class="align-center">
-	  		<img src="{{ site.url }}{{ site.baseurl }}/assets/pdf/kidney-channel/kidney-channel-of-foot/{{ pic_name }}" alt="" />
+	  		<img src="{{ site.url }}{{ site.baseurl }}/assets/pdf/kidney-channel/pic/{{ pic_name }}" alt="" />
 		</figure> 
 	{% endfor %}
 </ul>
