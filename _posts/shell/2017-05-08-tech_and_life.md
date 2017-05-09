@@ -9,18 +9,7 @@ This is a slide about technology and life shows how technology was developed and
 <!--shoreline-->
 ---
 
-<ul>
-    {% for i in (1..37) %}
-        {% if i < 10 %}
-            {% assign pic_name = '幻灯片0' | append: i | append: '.jpg' %}
-        {% else %}
-            {% assign pic_name = '幻灯片' | append: i | append: '.jpg' %}
-        {% endif %}
-        <figure style="width: 540px; border: 1px solid #ccc;" class="align-center">
-            <img src="{{ site.url }}{{ site.baseurl }}/assets/pdf/tech_life/pic/{{ pic_name }}" alt="" style="margin: 0 !important;" />
-        </figure> 
-    {% endfor %}
-</ul>
+{% include slide root="/assets/pdf/tech_life/pic/" count="37" %}
 
 ## Computer Vision Video
 

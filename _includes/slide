@@ -1,0 +1,15 @@
+{% capture root %}{{ include.root }}{% endcapture %}
+{% capture count %}{{ include.count }}{% endcapture %}
+
+<ul>
+    {% for i in (1..count) %}
+        {% if i < 10 %}
+            {% assign pic_name = '幻灯片0' | append: i | append: '.jpg' %}
+        {% else %}
+            {% assign pic_name = '幻灯片' | append: i | append: '.jpg' %}
+        {% endif %}
+        <figure style="width: 540px; border: 1px solid #ccc;" class="align-center">
+            <img src="{{ site.url }}{{ site.baseurl }}{{ root }}{{ pic_name }}" alt="" style="margin: 0 !important;" />
+        </figure> 
+    {% endfor %}
+</ul>

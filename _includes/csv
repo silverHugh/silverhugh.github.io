@@ -1,3 +1,5 @@
+{% capture csv_file %}{{ include.csv }}{% endcapture %}
+
 {% if d3 %}	
 {% assign d3 = d3 | plus: 1 %}
 {% else %}
@@ -28,5 +30,5 @@ function insert_csv(file, num){
 <div class="d3">
 </div>
 <script type="text/javascript">
-	insert_csv("{{ include.csv }}", {{ d3 }});
+	insert_csv("{{ csv_file }}", {{ d3 }});
 </script>

@@ -11,15 +11,4 @@ Just for fun, I select some paragraphs from Jin Yong's wuxia novels which have s
 <!--shoreline-->
 ---
 
-<ul>
-	{% for i in (1..57) %}
-		{% if i < 10 %}
-			{% assign pic_name = '幻灯片0' | append: i | append: '.jpg' %}
-		{% else %}
-			{% assign pic_name = '幻灯片' | append: i | append: '.jpg' %}
-		{% endif %}
-		<figure style="width: 540px; border: 1px solid #ccc;" class="align-center">
-	  		<img src="{{ site.url }}{{ site.baseurl }}/assets/pdf/kidney-channel/pic/{{ pic_name }}" alt="" style="margin: 0 !important;" />
-		</figure> 
-	{% endfor %}
-</ul>
+{% include slide root="/assets/pdf/kidney-channel/pic/" count="57" %}
