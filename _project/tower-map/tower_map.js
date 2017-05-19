@@ -8,13 +8,27 @@ window.onload = function(){
         text: '#ffffff'
     }
 
+    // var convertData = function (data) {
+    //     var res = [];
+    //     for (var key in data) {
+    //         res.push({
+    //             name: key,
+    //             value: data[key]
+    //         });
+    //     }
+    //     return res;
+    // };
+
     var convertData = function (data) {
         var res = [];
-        for (var key in data) {
+        for (var i = 0; i < data.length; i++) {
+            var tower = data[i];
             res.push({
-                name: key,
-                value: data[key]
-            });
+                name: tower['name'],
+                value: [tower['lng_num'], tower['lat_num'], tower['alt_num'], 
+                    tower['addr'], tower['time'], tower['pic_time'], tower['pic'],
+                    tower['description'], tower['link']]
+                });
         }
         return res;
     };
@@ -123,7 +137,7 @@ window.onload = function(){
                 bottom: '2%',
                 dimension: 2,
                 min: 0,
-                max: 1500,
+                max: 3250,
                 itemWidth: 20,
                 itemHeight: 200,
                 precise: 0.1,
@@ -309,7 +323,7 @@ window.onload = function(){
     t_map.showLoading();
     /* Data format: { "name": [latitude, longitude, altitude, address,
      time, img, date, link] } */
-    $.get('tower.json').done(function(data){
+    $.get('towers_new.json').done(function(data){
         t_map.hideLoading();
         t_map.setOption({
             series:[{
