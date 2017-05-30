@@ -80,6 +80,15 @@ json.dumps(OrderedDict([("a", 1), ("b", 2)]))   # '{"a": 1, "b": 2}'
 json.dumps(OrderedDict(a=1, b=2))   # '{"a": 1, "b": 2}'
 ```
 
+### String
+#### Regular expression
+
+[Regular expression operations](https://docs.python.org/3.5/library/re.html)
+
+```python
+re.findall(r'\d+\.?\d+', "116°23'56.97\"E") # ['116', '23', '56.97']
+```
+
 ### Class
 
 [Improve Your Python: Python Classes and Object Oriented Programming](https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/)

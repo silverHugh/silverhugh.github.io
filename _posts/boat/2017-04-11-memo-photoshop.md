@@ -4,6 +4,7 @@ categories: [memo, boat]
 date: 2017-04-11 18:50:40 +0800
 tags: Photoshop
 redirect_from: /memo/ps/
+mathjax: true
 ---
 
 This is one of my memos about using Photoshop.
@@ -72,3 +73,31 @@ This is one of my memos about using Photoshop.
 | Camera Raw | command+shift+A | 水平校正，透视矫正，水平纵向双重矫正 |
 |  |  |  |
 
+
+## Black Technology
+
+### Preview the print size
+
+#### 1. Resolution
+
+![2560*1440](/assets/images/resolution.png)
+
+#### 2. Pythagorean theorem
+
+\$$ \sqrt{2560^2+1440^2}=2937.209560109 $$
+
+#### 3. DPI
+
+\$$ 2937.21 \div 25 =  117.4884$$
+
+#### 4. Set Screen Resolution
+
+![](/assets/images/screen_resolution.png)
+
+Short Key: Command + K
+
+#### 5. Print Preview
+
+View -> Print Size
+
+Equal with REAL size!

@@ -352,11 +352,4 @@ window.onload = function(){
         anchor: BMAP_ANCHOR_TOP_RIGHT
     });
     bmap.addControl(top_left_control);
-    /* 拖拽事件 */
-    // bmap.addEventListener('dragstart', function(obj){
-    //     console.log(obj.pixel, obj.point);
-    // });
-    // bmap.addEventListener('dragend', function(obj){
-    //     console.log(obj.pixel, obj.point);
-    // });
 };
