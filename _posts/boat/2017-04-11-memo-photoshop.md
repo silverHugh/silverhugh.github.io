@@ -71,8 +71,7 @@ This is one of my memos about using Photoshop.
 | 假文 |  |  |
 | 肤色识别 | 选择-色彩范围-肤色 |  |
 | Camera Raw | command+shift+A | 水平校正，透视矫正，水平纵向双重矫正 |
-|  |  |  |
-
+| 反向选择 | command+I |  |
 
 ## Black Technology
 
