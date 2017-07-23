@@ -23,9 +23,9 @@ This is one of my memos about Shell commands.
 ssh NAME@HOST -p PORT -Y
 
 # Port forwardings
-#   This will connect localhost:LOCAL_PORT to FORWARD_HOST:FORWARD_PORT
+#   This will connect localhost:LOCAL_PORT with FORWARD_HOST:FORWARD_PORT
 #   via ssh NAME@HOST -p PORT
-#   ( if you want to bind HOST:PORT to localhost:LOCAL_PORT,
+#   ( if you want to bind HOST:PORT with localhost:LOCAL_PORT,
 #       just set FORWARD_HOST to 0.0.0.0 
 #       insted of seting FORWARD_HOST equal with HOST )
 ssh -L LOCAL_PORT:FORWARD_HOST:FORWARD_PORT NAME@HOST -p PORT
