@@ -6,13 +6,13 @@ tags: Shell
 redirect_from: /memo/shell/
 ---
 
+{% include toc %}
+
 This is one of my memos about Shell commands.
 
 **Memos** are used for recording the problems I encountered during programming and its soulutions. I also write down something that is hard to remember for myself.
 
 <!--shoreline-->
-
-{% include toc %}
 
 ## SSH
 
@@ -46,7 +46,7 @@ cat ~/.ssh/id_rsa.pub | ssh -p PORT NAME@HOST 'mkdir .ssh; cat >> .ssh/authorize
 ## Daemon
 
 ``` shell
-nohup PROGRAM > /dev/null &
+nohup PROGRAM >> /dev/null &
 ```
 
 ## Tree
