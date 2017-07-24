@@ -12,6 +12,8 @@ This is one of my memos about Shell commands.
 
 <!--shoreline-->
 
+{% include toc %}
+
 ## SSH
 
 ``` shell
@@ -29,7 +31,17 @@ ssh NAME@HOST -p PORT -Y
 #       just set FORWARD_HOST to 0.0.0.0 
 #       insted of seting FORWARD_HOST equal with HOST )
 ssh -L LOCAL_PORT:FORWARD_HOST:FORWARD_PORT NAME@HOST -p PORT
+
+# Authorized with keys
+#   Clinet side: Add your public key to server
+cat ~/.ssh/id_rsa.pub | ssh -p PORT NAME@HOST 'cat >> .ssh/authorized_keys'
+#   Client side: Change the file mode on server ( important! )
+cat ~/.ssh/id_rsa.pub | ssh -p PORT NAME@HOST 'mkdir .ssh; cat >> .ssh/authorized_keys'
 ```
+
+## Command operators & separators
+
+[Shell - Multiple commands in one line](https://stackoverflow.com/questions/5130847/shell-multiple-commands-in-one-line)
 
 ## Daemon
 
@@ -45,4 +57,18 @@ tree . -d
 #   -L  level
 #       Max display depth of the directory tree.
 tree . -d -L 2
+```
+
+## Linux Version
+
+[Linux Command: Show Linux Version](https://www.cyberciti.biz/faq/command-to-show-linux-version/)
+
+``` shell
+# Linux kernel version
+uname -r
+# or
+cat /proc/sys/kernel/{ostype,osrelease,version}
+
+# Linux distribution version
+lsb_relase -a
 ```
