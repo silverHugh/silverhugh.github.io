@@ -46,7 +46,7 @@ cat ~/.ssh/id_rsa.pub | ssh -p PORT NAME@HOST 'mkdir .ssh; cat >> .ssh/authorize
 ## Daemon
 
 ``` shell
-nohup PROGRAM >> /dev/null &
+nohup PROGRAM > /dev/null &
 ```
 
 ## Tree
