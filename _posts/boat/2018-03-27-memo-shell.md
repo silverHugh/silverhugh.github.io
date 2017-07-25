@@ -3,7 +3,10 @@ title: Memo - Shell
 categories: [memo, boat]
 date: 2017-06-28 17:29:07 +0800
 tags: Shell
-redirect_from: /memo/shell/
+redirect_from: 
+- /memo/shell/
+- /memo/sh/
+- /memo/bash/
 ---
 
 {% include toc %}
@@ -13,6 +16,8 @@ This is one of my memos about Shell commands.
 **Memos** are used for recording the problems I encountered during programming and its soulutions. I also write down something that is hard to remember for myself.
 
 <!--shoreline-->
+
+[shell十三问](https://wizardforcel.gitbooks.io/shell-13-questions/content/1.html)
 
 ## SSH
 
@@ -72,3 +77,8 @@ cat /proc/sys/kernel/{ostype,osrelease,version}
 # Linux distribution version
 lsb_relase -a
 ```
+
+## Associative array
+
+[Bash associative array examples](http://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)
+
