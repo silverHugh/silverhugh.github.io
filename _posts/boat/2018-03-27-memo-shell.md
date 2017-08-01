@@ -22,6 +22,11 @@ This is one of my memos about Shell commands.
 ## SSH
 
 ``` shell
+# Generate SSH key & add it to ssh agent
+#   https://gist.github.com/jexchan/2351996
+ssh-keygen -t rsa -C "your_email@youremail.com" -f filename
+ssh-add filename
+ssh-add -l
 # Enable trusted x11 forwarding
 #   -Y      Enables trusted X11 forwarding.  
 #           Trusted X11 forwardings are not subjected to 
