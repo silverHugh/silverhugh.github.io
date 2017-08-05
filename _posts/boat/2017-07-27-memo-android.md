@@ -25,8 +25,7 @@ This is one of my memos about using Android.
 
 - [Android platform information](https://developer.android.com/about/dashboards/index.html)
 - [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/index.html)
-    - [Launcher icon generator](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
-
+  - [Launcher icon generator](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
 
 ### JDK
 
@@ -80,8 +79,8 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 }
 ```
 
-
 ## Use
+
 ### 已连接，但无法访问网络
 
 [关于 ANDROID 5.0-7.1.2 网络图标上的感叹号及其解决办法](https://www.noisyfox.io/android-captive-portal.html)
