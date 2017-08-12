@@ -5,6 +5,7 @@ date: 2017-04-11 18:50:40 +0800
 tags: Photoshop
 redirect_from: /memo/ps/
 mathjax: true
+modified: 2017-04-11 18:50:40 +0800
 ---
 
 This is one of my memos about using Photoshop.

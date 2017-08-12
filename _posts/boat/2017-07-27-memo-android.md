@@ -4,6 +4,7 @@ categories: [memo, boat]
 date: 2017-04-30 21:02:21 +0800
 redirect_from: 
 - /memo/android/
+modified: 2017-08-12 15:29:02 +0800
 ---
 
 This is one of my memos about using Android.

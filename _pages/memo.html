@@ -5,6 +5,9 @@ permalink: /memo/
 author_profile: true
 ---
 
-{% for post in site.categories.memo %}
+
+{% assign memos = site.categories.memo | sort: 'modified' | reverse %}
+
+{% for post in memos %}
   {% include archive-single.html %}
 {% endfor %}

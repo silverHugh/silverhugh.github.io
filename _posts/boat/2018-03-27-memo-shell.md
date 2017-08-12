@@ -7,6 +7,7 @@ redirect_from:
 - /memo/shell/
 - /memo/sh/
 - /memo/bash/
+modified: 2017-06-28 17:29:07 +0800
 ---
 
 {% include toc %}

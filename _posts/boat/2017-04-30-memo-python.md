@@ -5,7 +5,10 @@ date: 2017-04-30 21:02:21 +0800
 redirect_from: 
 - /memo/py/
 - /memo/python/
+gist: true
+modified: 2017-08-11 19:28:06 +0800
 ---
+
 
 This is one of my memos about Python language.
 
@@ -20,7 +23,7 @@ This is one of my memos about Python language.
 
 [Dive Into Python](http://www.diveintopython.net/toc/index.html)
 
-## Basic strategies
+## Basic
 
 ```python
 # Get all attributes of a object
@@ -29,6 +32,9 @@ dir(object_name)
 type(object_name)
 # Check the type
 isinstance(obj_name, class_name)
+# Main
+if __name__ == "__main__":
+    pass
 ```
 
 ### Flow of Control
@@ -94,6 +100,14 @@ re.findall(r'\d+\.?\d+', "116°23'56.97\"E") # ['116', '23', '56.97']
 [Improve Your Python: Python Classes and Object Oriented Programming](https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/)
 
 ## File Reading and Writing
+
+### Basic
+
+``` py
+with open(path, 'w') as f:
+    pass
+```
+
 ### Read Excel
 
 [Python Excel Tutorial: The Definitive Guide](https://www.datacamp.com/community/tutorials/python-excel-tutorial#gs.G9sppfU)
@@ -107,6 +121,10 @@ wb = load_workbook(filename='tower.xlsx', read_only=True)
 # Get the first sheet, ws:<ReadOnlyWorksheet>
 ws = wb[wb.get_sheet_names()[0]]
 ```
+
+### Write csv & xlsx
+
+<code data-gist-id="3e5dad25a49ab7cd966caae65a9f9ef4" data-gist-line="5-10,55-79"></code>
 
 ## Format
 ### Basic Data Structure
