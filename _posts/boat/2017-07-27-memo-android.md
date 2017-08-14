@@ -15,7 +15,6 @@ This is one of my memos about using Android.
 
 {% include toc %}
 
-
 ## Programming
 
 ### Must Read
