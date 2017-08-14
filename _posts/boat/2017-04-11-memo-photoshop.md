@@ -10,7 +10,7 @@ modified: 2017-04-11 18:50:40 +0800
 
 This is one of my memos about using Photoshop.
 
-**Memos** are used for recording the problems I encountered during programming and its soulutions. I also write down something that is hard to remember for myself.
+**Memos** are used for recording the problems I encountered during programming and its solutions. I also write down something that is hard to remember for myself.
 
 <!--shoreline-->
 ---

@@ -9,9 +9,11 @@ modified: 2017-08-12 15:32:39 +0800
 
 This is one of my memos about Laravel framework.
 
-**Memos** are used for recording the problems I encountered during programming and its soulutions. I also write down something that is hard to remember for myself.
+**Memos** are used for recording the problems I encountered during programming and its solutions. I also write down something that is hard to remember for myself.
 
 <!--shoreline-->
+
+{% include toc %}
 
 ## Installation
 
@@ -36,7 +38,7 @@ php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 export PATH="~/.composer/vendor/bin:$PATH"
 ```
 
-### Install Larave
+### Install Laravel
 
 [Installation](https://docs.golaravel.com/docs/5.4/installation/)
 

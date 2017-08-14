@@ -9,7 +9,7 @@ modified: 2017-08-12 15:29:02 +0800
 
 This is one of my memos about using Android.
 
-**Memos** are used for recording the problems I encountered during programming and its soulutions. I also write down something that is hard to remember for myself.
+**Memos** are used for recording the problems I encountered during programming and its solutions. I also write down something that is hard to remember for myself.
 
 <!--shoreline-->
 
