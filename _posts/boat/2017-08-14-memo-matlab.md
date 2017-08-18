@@ -16,6 +16,15 @@ This is one of my memos about Matlab.
 
 <!--shoreline-->
 
+## Basic
+
+[Official Document - Functions](https://www.mathworks.com/help/matlab/functionlist.html)
+
+``` matlab
+% max of a matrix, matrix to vector first
+max(matrix(:))
+```
+
 ## File
 
 ### List folder contents
@@ -38,5 +47,3 @@ FileInfo = dir('file_name')
 
 - [`imread`](https://www.mathworks.com/help/matlab/ref/imread.html)
 - [`imresize`](https://www.mathworks.com/help/images/ref/imresize.html)  - `[x, NaN]` ratio reserved
-
-## String
