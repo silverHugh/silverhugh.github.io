@@ -39,18 +39,24 @@ h2 {
 
 h3 {
   font-size: $type-size-5;
+  color: $gray;
 }
 
 h4 {
   font-size: $type-size-6;
+  color: $lighter-gray;
 }
 
 h5 {
   font-size: $type-size-6;
+  color: $lighter-gray;
+  font-weight: normal;
 }
 
 h6 {
   font-size: $type-size-6;
+  color: $lighter-gray;
+  font-weight: lighter;
 }
 
 small, .small {
