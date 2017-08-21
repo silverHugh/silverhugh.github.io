@@ -25,6 +25,7 @@ This is one of my memos about Shell commands.
 ``` shell
 # Generate SSH key & add it to ssh agent
 #   https://gist.github.com/jexchan/2351996
+eval `ssh-agent`
 ssh-keygen -t rsa -C "your_email@youremail.com" -f filename
 ssh-add filename
 ssh-add -l
@@ -87,4 +88,3 @@ lsb_relase -a
 ## Associative array
 
 [Bash associative array examples](http://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)
-
