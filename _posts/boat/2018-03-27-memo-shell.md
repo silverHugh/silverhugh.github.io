@@ -22,7 +22,7 @@ This is one of my memos about Shell commands.
 
 ## SSH
 
-``` shell
+``` sh
 # Generate SSH key & add it to ssh agent
 #   https://gist.github.com/jexchan/2351996
 eval `ssh-agent`
@@ -57,13 +57,13 @@ cat ~/.ssh/id_rsa.pub | ssh -p PORT NAME@HOST 'mkdir .ssh; cat >> .ssh/authorize
 
 ## Daemon
 
-``` shell
+``` sh
 nohup PROGRAM > /dev/null &
 ```
 
 ## Tree
 
-``` shell
+``` sh
 # List directories only
 tree . -d
 #   -L  level
@@ -71,11 +71,13 @@ tree . -d
 tree . -d -L 2
 ```
 
-## Linux Version
+## System and hardware information
+
+### Linux Version
 
 [Linux Command: Show Linux Version](https://www.cyberciti.biz/faq/command-to-show-linux-version/)
 
-``` shell
+``` sh
 # Linux kernel version
 uname -r
 # or
@@ -83,8 +85,45 @@ cat /proc/sys/kernel/{ostype,osrelease,version}
 
 # Linux distribution version
 lsb_relase -a
+cat /etc/*release*
 ```
 
-## Associative array
+### Hardware Information
+
+``` sh
+# cpu and processing units
+lscpu
+# list block devices 
+lsblk
+# disk space of file systems
+df -H
+# memory
+free -h
+# usb
+lsusb
+# nvidia gpu
+watch -n 0.1 nvidia-smi
+```
+
+## Grammar
+
+### Associative array
 
 [Bash associative array examples](http://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)
+
+### Read file
+
+``` sh
+#!/bin/bash
+# Read file line by line
+input="/path/to/txt/file"
+while IFS= read -r var
+do
+  echo "$var"
+done < "$input"
+# Read file line by line with IFS (internal field separator)
+while IFS=, read -r v1 v2 v3
+do
+    echo "$v1: $v2, $v3"
+done < "$input"
+```

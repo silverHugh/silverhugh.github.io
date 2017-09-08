@@ -25,7 +25,7 @@ This is one of my memos about Python language.
 
 ## Basic
 
-```python
+``` py
 # Get all attributes of a object
 dir(object_name)
 # Show the type of a object
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
 ### Flow of Control
 
-```python
+``` py
 # Loop with index
 for index, itme in enumerate(itmes):
     print(index, item)
@@ -47,7 +47,7 @@ for index, itme in enumerate(itmes):
 
 ### List
 
-```python
+``` py
 # Flatten list
 [item for sublist in target for item in sublist]
 
@@ -78,7 +78,7 @@ str_list = filter(lambda item: item, str_list) # slower than list comprehension
 
 ### Dict
 
-```python
+``` py
 # OrderedDict http://stackoverflow.com/questions/10844064
 from collections import OrderedDict
 json.dumps(OrderedDict([("a", 1), ("b", 2)]))   # '{"a": 1, "b": 2}'
@@ -91,7 +91,7 @@ json.dumps(OrderedDict(a=1, b=2))   # '{"a": 1, "b": 2}'
 
 [Regular expression operations](https://docs.python.org/3.5/library/re.html)
 
-```python
+``` py
 re.findall(r'\d+\.?\d+', "116°23'56.97\"E") # ['116', '23', '56.97']
 ```
 
@@ -99,7 +99,7 @@ re.findall(r'\d+\.?\d+', "116°23'56.97\"E") # ['116', '23', '56.97']
 
 [Improve Your Python: Python Classes and Object Oriented Programming](https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/)
 
-## File Reading and Writing
+## File operations
 
 ### Basic
 
@@ -108,13 +108,19 @@ with open(path, 'w') as f:
     pass
 ```
 
+``` py
+# https://docs.python.org/2/library/shutil.html#shutil.move
+import shutil
+shutil.move(src, dst)
+```
+
 ### Read Excel
 
 [Python Excel Tutorial: The Definitive Guide](https://www.datacamp.com/community/tutorials/python-excel-tutorial#gs.G9sppfU)
 
 [openpyxl](https://openpyxl.readthedocs.io/en/default/optimized.html) - A Python library to read/write Excel 2010 xlsx/xlsm files.
 
-```python
+``` py
 from openpyxl import load_workbook
 # Load xlsx file
 wb = load_workbook(filename='tower.xlsx', read_only=True)
@@ -129,7 +135,7 @@ ws = wb[wb.get_sheet_names()[0]]
 ## Format
 ### Basic Data Structure
 
-```python
+``` py
 # Trim whitespace
 s.strip()
 # Extract number from string
@@ -144,7 +150,7 @@ json.dumps(obj, indent=4, ensure_ascii=False)
 
 ### Geographic coordinates
 
-```python
+``` py
 import re
 
 def dms2dd(degrees, minutes, seconds, direction):
@@ -167,9 +173,15 @@ parse_dms(lag)  # 116.3992
 
 ### Datetime
 
-[Python's strftime directives](http://strftime.org/)
+[Python's strftime directives]( http://strftime.org/ )
 
-```python
+``` py
 import datetime
 object.strftime('%Y-%m-%d %H:%M:%S')    # 2017-05-01 08:18:05
 ```
+
+## Jupyter Notebook
+
+- [Jupyter (IPython) notebooks features](http://arogozhnikov.github.io/2016/09/10/jupyter-features.html)
+- [28 Jupyter Notebook tips, tricks and shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+
