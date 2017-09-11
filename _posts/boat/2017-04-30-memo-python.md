@@ -6,7 +6,7 @@ redirect_from:
 - /memo/py/
 - /memo/python/
 gist: true
-modified: 2017-08-11 19:28:06 +0800
+modified: 2017-09-11 09:50:40 +0800
 ---
 
 
@@ -184,4 +184,11 @@ object.strftime('%Y-%m-%d %H:%M:%S')    # 2017-05-01 08:18:05
 
 - [Jupyter (IPython) notebooks features](http://arogozhnikov.github.io/2016/09/10/jupyter-features.html)
 - [28 Jupyter Notebook tips, tricks and shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+- [Node kernel - IJavascript](https://github.com/n-riesco/ijavascript)
+
+``` sh
+npm install -g ijavascript
+ijinstall
+jupyter notebook
+```
 
