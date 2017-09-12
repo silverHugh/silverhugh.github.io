@@ -69,6 +69,7 @@
   vertical-align: top;
   width: 36px;
   height: 36px;
+  padding-left: 15px;
 
   @include breakpoint($large) {
     display: block;
@@ -106,7 +107,7 @@
 
 .author__name {
   margin: 0;
-  padding-left: 27px;
+  padding-left: 42px;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -135,6 +136,7 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
+  padding-left: 30px;
 
   li:last-child {
     a {
