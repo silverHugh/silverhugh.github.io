@@ -6,7 +6,7 @@ redirect_from:
 - /memo/py/
 - /memo/python/
 gist: true
-modified: 2017-09-11 09:50:40 +0800
+modified: 2017-10-15 14:20:05 +0800
 ---
 
 
@@ -21,7 +21,8 @@ This is one of my memos about Python language.
 
 ## Links
 
-[Dive Into Python](http://www.diveintopython.net/toc/index.html)
+- [Overview - CS228 Python Tutorial](http://nbviewer.jupyter.org/github/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb)
+- [Dive Into Python](http://www.diveintopython.net/toc/index.html)
 
 ## Basic
 
@@ -180,6 +181,66 @@ import datetime
 object.strftime('%Y-%m-%d %H:%M:%S')    # 2017-05-01 08:18:05
 ```
 
+## Numpy
+
+``` py
+import numpy as np
+# ReLU fastest way
+np.maximum(x, 0, x)
+# won't modify x, the fastest way
+x * (x > 0)
+# dReLU, set 0 for x = 0
+1. * (x > 0)
+```
+
+## Forward learning
+
+> I figure out that group these memos by event is more efficient. So we can remember the story behind the code and remember them faster. I'm writing memo rather than tutorial.<br>
+> 2017.10
+
+### Array slice
+
+- Array slice ( when see sample of filename ).
+
+``` py
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
+a[start:end:step] # start through not past end, by step
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+```
+
+### Image processing
+
+- [Image processing with scipy (scipy.misc, numpy Pillow)](http://www.scipy-lectures.org/advanced/image_processing/)
+
+``` py
+import matplotlib.pyplot as plt
+from scipy import misc
+img = misc.imread(file_path)
+plt.imshow(img)
+print(tpye(img), img.shape, img.dtype)
+```
+
+- [Apply functions to list item](https://chrisalbon.com/python/applying_functions_to_list_items.html)
+
+``` py
+result = [item.operation() for item in items]
+```
+
+### Exceptions and assert
+
+> Asserts should be used to test conditions that should never happen. The purpose is to crash early in the case of a corrupt program state.<br>
+> Exceptions should be used for errors that can conceivably happen, and you should almost always create your own Exception classes.
+>
+> [Best practice for Python assert - Deestan's answer](https://stackoverflow.com/a/945135)
+
+[Exceptions](https://www.joelonsoftware.com/2003/10/13/13/)
+
+
 ## Jupyter Notebook
 
 - [Jupyter (IPython) notebooks features](http://arogozhnikov.github.io/2016/09/10/jupyter-features.html)
@@ -192,3 +253,9 @@ ijinstall
 jupyter notebook
 ```
 
+``` py
+# Get the content of *.py into jupyter notebook
+load *.py
+# Get the content of a function
+function_name??
+```
