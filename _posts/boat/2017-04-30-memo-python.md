@@ -6,7 +6,7 @@ redirect_from:
 - /memo/py/
 - /memo/python/
 gist: true
-modified: 2017-10-15 14:20:05 +0800
+modified: 2017-10-29 12:00:55 +0800
 ---
 
 
@@ -195,7 +195,7 @@ x * (x > 0)
 
 ## Forward learning
 
-> I figure out that group these memos by event is more efficient. So we can remember the story behind the code and remember them faster. I'm writing memo rather than tutorial.<br>
+> I figure out that group these memos by event is more efficient. So I can remember the story behind the code and remember them faster. After all, I'm writing memo rather than tutorial.<br>
 > 2017.10
 
 ### Array slice
@@ -240,6 +240,30 @@ result = [item.operation() for item in items]
 
 [Exceptions](https://www.joelonsoftware.com/2003/10/13/13/)
 
+### Count duplicate items
+
+[using `count`](https://stackoverflow.com/a/23240989)
+
+``` py
+class_summary = {key:img_classes.count(key) for key in img_classes}
+```
+
+### Computing
+
+[Cython 基本用法](https://zhuanlan.zhihu.com/p/24311879)
+
+### Packages
+
+- numpy
+- scipy
+- matplotlib
+- scikit-learn
+- pandas
+  - numexpr
+  - bottleneck
+- Pillow
+- ipykernel
+- tensorflow-gpu
 
 ## Jupyter Notebook
 
